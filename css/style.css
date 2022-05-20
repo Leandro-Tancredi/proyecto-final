@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/*----------variables-------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------Configuración común a todas las páginas--------------------*/
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-image: url(../images/pizzah.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-fluid {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+h1 {
+  padding-top: 10%;
+  padding-bottom: 1%;
+  font-family: "oleo script";
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+footer {
+  padding-top: 20px;
+  color: rgb(255, 1, 1);
+  font-size: 30px;
+}
+footer .po {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  color: rgb(2, 2, 2);
+  font-size: 15px;
+  margin-left: 20px;
+  background-color: rgb(245, 245, 251);
+  padding-left: 2%;
+  max-width: 40%;
+}
+
+.pos {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  gap: 10%;
+}
+
+/*------------------------Home----------------------*/
+.item1Main,
+.item2Main,
+.item4Main {
+  height: 100%;
+  width: 100%;
+}
+
+.item1Main {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 2%;
+}
+
+.item2Main {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 2%;
+}
+
+.item4Main {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 2%;
+}
+
+.mainItem3 {
+  padding: 3%;
+  color: rgb(245, 245, 251);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+/*----------promociones-------*/
+.promos {
+  font-family: "oleo script";
+  text-align: center;
+  font-size: 50px;
+  -webkit-animation-name: parpadeo;
+          animation-name: parpadeo;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    color: rgb(3, 84, 48);
+  }
+  10% {
+    color: rgb(5, 252, 26);
+  }
+  20% {
+    color: rgb(248, 236, 236);
+  }
+  30% {
+    color: rgb(121, 249, 249);
+  }
+  40% {
+    color: rgb(117, 117, 243);
+  }
+  50% {
+    color: rgb(190, 129, 244);
+  }
+  60% {
+    color: rgb(253, 9, 176);
+  }
+  70% {
+    color: rgb(251, 60, 63);
+  }
+  80% {
+    color: rgb(246, 2, 2);
+  }
+  90% {
+    color: rgb(253, 128, 11);
+  }
+  100% {
+    color: rgb(219, 238, 4);
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    color: rgb(3, 84, 48);
+  }
+  10% {
+    color: rgb(5, 252, 26);
+  }
+  20% {
+    color: rgb(248, 236, 236);
+  }
+  30% {
+    color: rgb(121, 249, 249);
+  }
+  40% {
+    color: rgb(117, 117, 243);
+  }
+  50% {
+    color: rgb(190, 129, 244);
+  }
+  60% {
+    color: rgb(253, 9, 176);
+  }
+  70% {
+    color: rgb(251, 60, 63);
+  }
+  80% {
+    color: rgb(246, 2, 2);
+  }
+  90% {
+    color: rgb(253, 128, 11);
+  }
+  100% {
+    color: rgb(219, 238, 4);
+  }
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "f1 f2 f3" "f4 f5 f6" "f7 f8 f9";
+}
+
+.f1 {
+  grid-area: f1;
+  position: relative;
+  border-radius: 10%;
+  border: solid 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.f1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.f1 .pi {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+}
+
+.f2 {
+  grid-area: f2;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+.f3 {
+  grid-area: f3;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+.f4 {
+  grid-area: f4;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+.f5 {
+  grid-area: f5;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+.f6 {
+  grid-area: f6;
+  width: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+.f7 {
+  grid-area: f7;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+.f8 {
+  grid-area: f8;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+.f9 {
+  grid-area: f9;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: solid 10px;
+}
+
+/*------------------contacto------------------*/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1-contacto {
+  font-family: "oleo script";
+  text-align: center;
+  font-size: 50px;
+  -webkit-animation-name: parpadeo;
+          animation-name: parpadeo;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {
+  0% {
+    color: rgb(3, 84, 48);
+  }
+  10% {
+    color: rgb(5, 252, 26);
+  }
+  20% {
+    color: rgb(248, 236, 236);
+  }
+  30% {
+    color: rgb(121, 249, 249);
+  }
+  40% {
+    color: rgb(117, 117, 243);
+  }
+  50% {
+    color: rgb(190, 129, 244);
+  }
+  60% {
+    color: rgb(253, 9, 176);
+  }
+  70% {
+    color: rgb(251, 60, 63);
+  }
+  80% {
+    color: rgb(246, 2, 2);
+  }
+  90% {
+    color: rgb(253, 128, 11);
+  }
+  100% {
+    color: rgb(219, 238, 4);
+  }
+}
+label {
+  opacity: 0.7;
+  border-radius: 15%;
+  font-family: "oleo script";
+  color: rgb(5, 5, 4);
+  font-size: 1.6em;
+  background-color: rgb(245, 245, 251);
+}
+
+.enviarBorrar {
+  height: auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.enviar, .borrar {
+  border: rgb(248, 239, 239) solid;
+  width: 60px;
+  background-color: rgb(241, 241, 1);
+  border-radius: 10px;
+  height: 30px;
+  font-family: "oleo script";
+}
+
+.enviar:hover, .borrar:hover {
+  transform: scale(1.5);
+  transition: 0.3;
+}
+
+.borrar:hover {
+  transform: scale(1.5);
+  transition: 0.3;
+}
+
+/*-------------------Menu-----------------*/
+.h1-menu {
+  color: rgb(245, 245, 251);
+  height: 20%;
+}
+
+.posicion-h1-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.h2-menu {
+  color: rgb(184, 230, 189);
+  height: 70px;
+  margin-bottom: 0;
+  font-family: "oleo script";
+}
+
+aside {
+  color: rgb(236, 236, 198);
+}
+
+.p-menu {
+  font-family: "oleo script";
+  color: rgb(250, 176, 176);
+  font-size: 1em;
+}
+
+/* ------------------nosotros-------------------- */
+.jumbotron {
+  color: rgb(245, 245, 251);
+  background: none;
+}
+
+.fila1 {
+  margin-top: 5%;
+}
+
+.historia-0 {
+  color: rgb(245, 245, 251);
+  font-size: 1.1em;
+  padding-top: 10%;
+  padding-left: 10%;
+  font-family: "oleo script";
+}
+
+.historia-1 {
+  color: rgb(245, 245, 251);
+  font-size: 1.1em;
+  padding-top: 10%;
+  padding-left: 10%;
+  font-family: "oleo script";
+}
+
+.historia-2 {
+  color: rgb(245, 245, 251);
+  font-size: 1.1em;
+  padding-top: 20%;
+  padding-left: 10%;
+  font-family: "oleo script";
+}
+
+.historia-1 {
+  padding-left: 1%;
+}
+
+.img3 {
+  padding-top: 10%;
+}
+
+.navbar-toggler {
+  background-color: rgb(245, 245, 251);
+}
+
+.navbar-nav {
+  padding-right: 3%;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(124, 123, 124);
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: capitalize;
+  font-family: "oleo script";
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(143, 1, 1);
+  text-decoration: none;
+}
+
+header span {
+  color: rgb(141, 140, 141);
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */

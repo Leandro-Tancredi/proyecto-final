@@ -1,0 +1,419 @@
+/*----------variables-------*/
+$color-letras:rgb(245, 245, 251);
+$fuente:'oleo script';
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------------------Configuración común a todas las páginas--------------------*/
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-image: url(../images/pizzah.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-fluid {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+
+
+
+main {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+h1 {
+    padding-top: 10%;
+    padding-bottom: 1%;
+    font-family: $fuente;
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+
+
+
+footer {
+    padding-top: 20px;
+    color: rgb(255, 1, 1);
+    font-size: 30px;
+        .po {
+                font-size: medium;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-transform: capitalize;
+                color: rgb(2, 2, 2);
+                font-size: 15px;
+                margin-left: 20px;
+                background-color: $color-letras;
+                padding-left: 2%;
+                max-width: 40%;
+}
+}
+.pos {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 10%
+}
+/*------------------------Home----------------------*/
+.item1Main,
+.item2Main,
+.item4Main {
+
+height: 100%;
+width: 100%;
+
+}
+@each $main in item1 , item2 , item4 {
+    .#{$main}Main{
+    object-fit: contain;
+    padding: 2%;
+ }
+
+}
+
+.mainItem3 {
+
+    padding: 3%;
+    color: $color-letras;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+
+
+/*----------promociones-------*/
+.promos {
+    font-family: $fuente;
+    text-align: center;
+    font-size: 50px;
+    animation-name: parpadeo;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {
+    0% {
+        color: rgb(3, 84, 48);
+    }
+
+    10% {
+        color: rgb(5, 252, 26);
+    }
+
+    20% {
+        color: rgb(248, 236, 236);
+    }
+
+    30% {
+        color: rgb(121, 249, 249);
+    }
+
+    40% {
+        color: rgb(117, 117, 243);
+    }
+
+    50% {
+        color: rgb(190, 129, 244);
+    }
+
+    60% {
+        color: rgb(253, 9, 176);
+    }
+
+    70% {
+        color: rgb(251, 60, 63);
+    }
+
+    80% {
+        color: rgb(246, 2, 2);
+    }
+
+    90% {
+        color: rgb(253, 128, 11);
+    }
+
+    100% {
+        color: rgb(219, 238, 4);
+    }
+}
+
+.contenedor {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "f1 f2 f3"
+      "f4 f5 f6"
+      "f7 f8 f9";
+  }
+  
+  .f1  { 
+    grid-area: f1; 
+    position: relative;
+    border-radius: 10%;
+    border: solid 10px;
+    object-fit:cover;
+   
+} 
+    .f1 img {
+        width: 100%;
+        height:100%;
+        
+        } 
+   
+    .f1 .pi{
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+  }
+  
+  .f2 { grid-area: f2; 
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: solid 10px;
+}
+  
+  .f3 { grid-area: f3;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: solid 10px; 
+}
+  
+  .f4 { grid-area: f4;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: solid 10px; 
+}
+  
+  .f5 { grid-area: f5;width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: solid 10px; 
+}
+  
+  .f6 { grid-area: f6;
+    width: 100%;
+    
+    border-radius: 10%;
+    border: solid 10px; 
+}
+  
+  .f7 { grid-area: f7; 
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: solid 10px;
+}
+  
+  .f8 { grid-area: f8;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: solid 10px; 
+}
+  
+  .f9 { grid-area: f9;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: solid 10px; 
+}
+  
+
+
+/*------------------contacto------------------*/
+.contacto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.h1-contacto {
+    font-family: $fuente;
+    text-align: center;
+    font-size: 50px;
+    animation-name: parpadeo;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {
+    0% {
+        color: rgb(3, 84, 48);
+    }
+
+    10% {
+        color: rgb(5, 252, 26);
+    }
+
+    20% {
+        color: rgb(248, 236, 236);
+    }
+
+    30% {
+        color: rgb(121, 249, 249);
+    }
+
+    40% {
+        color: rgb(117, 117, 243);
+    }
+
+    50% {
+        color: rgb(190, 129, 244);
+    }
+
+    60% {
+        color: rgb(253, 9, 176);
+    }
+
+    70% {
+        color: rgb(251, 60, 63);
+    }
+
+    80% {
+        color: rgb(246, 2, 2);
+    }
+
+    90% {
+        color: rgb(253, 128, 11);
+    }
+
+    100% {
+        color: rgb(219, 238, 4);
+    }
+}
+
+@mixin labels ($opaci, $b-radius, $font){
+    opacity: $opaci;;
+    border-radius: $b-radius;
+    font-family: $font;
+}
+label {
+    @include labels (0.7, 15%, $fuente ); 
+    color: rgb(5, 5, 4);
+    font-size: 1.6em;
+    background-color: $color-letras;
+    
+}
+
+.enviarBorrar {
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.enviar {
+    border: rgb(248, 239, 239) solid;
+    width: 60px;
+    background-color: rgb(241, 241, 1);
+    border-radius: 10px;
+    height: 30px;
+    font-family: $fuente;
+}
+
+.enviar:hover {
+    transform: scale(1.5);
+    transition: 0.3;
+}
+
+.borrar {
+    @extend .enviar;
+    
+}
+
+.borrar:hover {
+    transform: scale(1.5);
+    transition: 0.3;
+}
+
+/*-------------------Menu-----------------*/
+
+.h1-menu {
+    color: $color-letras;
+    height: 20%;
+}
+
+.posicion-h1-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.h2-menu {
+    color: rgb(184, 230, 189);
+    height: 70px;
+    margin-bottom: 0;
+    font-family: $fuente;
+}
+
+aside {
+    color: rgb(236, 236, 198);
+}
+.p-menu{
+    font-family: $fuente;
+    color: rgb(250, 176, 176);
+    font-size: 1em;
+}
+
+/* ------------------nosotros-------------------- */
+.jumbotron {
+    color: $color-letras;
+    background: none;
+}
+
+.fila1 {
+    margin-top: 5%;
+}
+
+
+$mapa:(
+    0: 10%,
+    1: 10%,  
+    2: 20%, 
+
+);
+@each $num, $top  in $mapa {
+    .historia-#{$num} {
+        color: $color-letras;
+        font-size: 1.1em;
+        padding-top: $top;
+        padding-left: 10%;
+        font-family:$fuente;
+    }
+    
+}
+.historia-1{
+    padding-left: 1%;
+}
+
+.img3 {
+    padding-top: 10%;
+}
+@import "_header"

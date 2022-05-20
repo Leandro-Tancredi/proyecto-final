@@ -1,0 +1,27 @@
+.navbar-toggler {
+    background-color: rgb(245, 245, 251);
+  }
+  
+  .navbar-nav {
+    padding-right: 3%;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(124, 123, 124);
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: capitalize;
+    font-family: "oleo script";
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(143, 1, 1);
+    text-decoration: none;
+  }
+  header span {
+    color: rgb(141, 140, 141);
+    text-transform: capitalize;
+  }
+  
