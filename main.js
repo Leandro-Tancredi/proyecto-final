@@ -28,7 +28,14 @@ let object2;
 let calcular= document.getElementById("calcular");
     calcular.addEventListener("click", clickResultado);
 
-    if (!acceso()) {
-acceso2()
-};
-
+//Desestructuración//
+        const { energia: e0, potencia: p0, mes: m0}= presupuestoTotal[0];
+        const { energia: e1, potencia: p1, mes: m1}= presupuestoTotal[1];
+        const { energia: e2, potencia: p2, mes: m2}= presupuestoTotal[2];
+        const { energia: e3, potencia: p3, mes: m3}= presupuestoTotal[3];
+        const { energia: e4, potencia: p4, mes: m4}= presupuestoTotal[4];
+        const { energia: e5, potencia: p5, mes: m5}= presupuestoTotal[5];
+       
+        if (!acceso()) {
+            acceso2()
+            };

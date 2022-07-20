@@ -99,10 +99,10 @@ function fin(select2){
 
 const presupuestoTotal2 =(a,b,c) => { 
 
-    const mesesDeConsumoKWH=[presupuestoTotal[0].energia,presupuestoTotal[1].energia,presupuestoTotal[2].energia,presupuestoTotal[3].energia,presupuestoTotal[4].energia,presupuestoTotal[5].energia];
+    const mesesDeConsumoKWH=[e0,e1,e2,e3,e4,e5];
     let sumaMeses=0; 
 
-if(object1.mes=="enero" && object2.mes=="enero"){sumaMeses=presupuestoTotal[0].energia};
+if(object1.mes=="enero" && object2.mes=="enero"){sumaMeses=e0};
 
 if(object1.mes=="enero" && object2.mes=="febrero"){
     for (let i = 0; i <= 1; i++) {
@@ -134,7 +134,7 @@ if(object1.mes=="enero" && object2.mes=="junio"){
     }
 };
 
-if(object1.mes=="febrero" && object2.mes=="febrero"){sumaMeses=presupuestoTotal[1].energia};
+if(object1.mes=="febrero" && object2.mes=="febrero"){sumaMeses=e1};
 
 if(object1.mes=="febrero" && object2.mes=="marzo"){
     for (let i = 1; i <= 2; i++) {
@@ -159,7 +159,7 @@ if(object1.mes=="febrero" && object2.mes=="junio"){
         sumaMeses+=mesesDeConsumoKWH[i];
 }
 };
-if(object1.mes=="marzo" && object2.mes=="marzo"){sumaMeses=presupuestoTotal[2].energia}
+if(object1.mes=="marzo" && object2.mes=="marzo"){sumaMeses=e2}
 
 if(object1.mes=="marzo" && object2.mes=="abril"){
     for (let i = 2; i <= 3; i++) {
@@ -176,7 +176,7 @@ if(object1.mes=="marzo" && object2.mes=="junio"){
         sumaMeses+=mesesDeConsumoKWH[i];
     }
 };
-if(object1.mes=="abril" && object2.mes=="abril"){sumaMeses=presupuestoTotal[3].energia}
+if(object1.mes=="abril" && object2.mes=="abril"){sumaMeses=e3}
 
 if(object1.mes=="abril" && object2.mes=="mayo"){
     for (let i = 3; i <= 4; i++) {
@@ -188,14 +188,14 @@ if(object1.mes=="abril" && object2.mes=="junio"){
         sumaMeses+=mesesDeConsumoKWH[i];
     }
 };
-if(object1.mes=="mayo" && object2.mes=="mayo"){sumaMeses=presupuestoTotal[4].energia};
+if(object1.mes=="mayo" && object2.mes=="mayo"){sumaMeses=e4};
 
 if(object1.mes=="mayo" && object2.mes=="junio"){ 
     for (let i = 4; i <= 5; i++) {
     sumaMeses+=mesesDeConsumoKWH[i];
 }
 };
-if(object1.mes=="junio" && object2.mes=="junio"){sumaMeses=presupuestoTotal[5].energia}
+if(object1.mes=="junio" && object2.mes=="junio"){sumaMeses=e5};
 
 return (sumaMeses*valorKWH); 
 }; 
