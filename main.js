@@ -12,6 +12,7 @@ fetch('datos.json')
     .then((data) => {
         presupuestoTotal1(data);
 });
+//IMPRIMO LA FECHA ACTUAL EN PANTALLA //
 fijarFecha();
 //DECLARACIÓN DE VARIABLES//
 let seleccion1;
@@ -27,4 +28,4 @@ let calcular= document.getElementById("calcular");
 //ACCESO AL PROGRAMA GUARDANDO LA CONTRASEÑA EN LA LOCAL STORAGE O LEYENDOLA SI SE ENCUENTRA CARGADA // 
  (!acceso()) ? acceso2(): "";
 
-//IMPRIMO LA FECHA ACTUAL EN PANTALLA //
+
