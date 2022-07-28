@@ -12,8 +12,10 @@ fetch('datos.json')
     .then((data) => {
         presupuestoTotal1(data);
 });
+
 //IMPRIMO LA FECHA ACTUAL EN PANTALLA //
 fijarFecha();
+
 //DECLARACIÓN DE VARIABLES//
 let seleccion1;
 let seleccion2;
