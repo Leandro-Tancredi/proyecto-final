@@ -5,8 +5,8 @@ const presupuestoTotal1 = (data) => {
         const DateTime= luxon.DateTime;
         const dia=DateTime.now();
         
-        let day= document.getElementById("day");
-            day.innerHTML=`<div>Hoy es ${dia.day}/${dia.month}/${dia.year} <hr></div> `;
+        let fecha= document.getElementById("day");
+            fecha.innerHTML=`<div>Hoy es ${dia.day}/${dia.month}/${dia.year} <hr></div> `;
                         
         let direccion=document.getElementById("direccion");
             direccion.innerHTML=`<div> Para conocer los valores de KWH y KW vigentes puede dirigirse a la página de Oceba haciendo click
