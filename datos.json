@@ -1,0 +1,8 @@
+[
+{"energia": 1000, "potencia": 100, "mes": "enero" },
+{"energia": 2000, "potencia": 100, "mes": "febrero" },
+{"energia": 3000, "potencia": 100, "mes": "marzo" },
+{"energia": 4000, "potencia": 100, "mes": "abril" },
+{"energia": 5000, "potencia": 100, "mes": "mayo" },
+{"energia": 6000, "potencia": 100, "mes": "junio"}
+]

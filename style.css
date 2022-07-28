@@ -8,3 +8,11 @@ body{
         text-align: center;
 }
 
+.posicion_boton{
+    display: flex;
+    justify-content: center;
+}
+
+.fondo{
+    background-color: rgb(209, 208, 208);
+}
