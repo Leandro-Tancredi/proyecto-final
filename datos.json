@@ -1,8 +1,14 @@
 [
-{"energia": 1000, "potencia": 100, "mes": "enero" },
-{"energia": 2000, "potencia": 100, "mes": "febrero" },
-{"energia": 3000, "potencia": 100, "mes": "marzo" },
-{"energia": 4000, "potencia": 100, "mes": "abril" },
-{"energia": 5000, "potencia": 100, "mes": "mayo" },
-{"energia": 6000, "potencia": 100, "mes": "junio"}
+{"energia": 3455141, "potencia": 25521, "mes": "enero" },
+{"energia": 3847834, "potencia": 27999, "mes": "febrero" },
+{"energia": 3850953, "potencia": 27149, "mes": "marzo" },
+{"energia": 3703754, "potencia": 26624, "mes": "abril" },
+{"energia": 3683900, "potencia": 25517, "mes": "mayo" },
+{"energia": 3691800, "potencia": 25378, "mes": "junio"},
+{"energia": 4248100, "potencia": 29262, "mes": "julio"},
+{"energia": 5763200, "potencia": 30114, "mes": "agosto"},
+{"energia": 5845300, "potencia": 28844, "mes": "septiembre"},
+{"energia": 5391000, "potencia": 28485, "mes": "octubre"},
+{"energia": 4890000, "potencia": 27675, "mes": "noviembre"},
+{"energia": 3998500, "potencia": 26633, "mes": "diciembre"}
 ]

@@ -4,15 +4,16 @@ body{
 }
 #titulo{
         margin-top: 30px;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
         text-align: center;
 }
 
 .posicion_boton{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.fondo{
-    background-color: rgb(209, 208, 208);
+.posicion_boton1{
+    display: flex;
+    justify-content: center;
 }

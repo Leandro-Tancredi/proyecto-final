@@ -4,70 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch Leandro Tancredi</title>
+    <title>Proyecto Final Leandro Tancredi</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
 <body>
    
-        <div class="container-fluid"id="pass"> 
+        <div class="container-fluid" id="pass"> 
             <div class="row justify-content-center ">
               <div class="col-12">
-            <h1 id="titulo">Dirección de Presupuesto y Administración Contable</h1>
+                <h1 id="titulo">Dirección de Presupuesto y Administración Contable</h1>
               </div>
             </div>
             <div class="row justify-content-center text-center">
               <div class="col-12 col-sm-6">
-            <h3 id="day"></h3>
+                <h3 id="day"></h3>
               </div>
             </div>
             <div class="row text-center my-5">
               <div class="col-12 ">
-            <h5 id="direccion"></h5>
+                <h5 id="direccion"></h5>
               </div>
             </div>
-          <div class="container fondo w-25 pb-3">
-            <div class="row justify-content-center text-center pt-3">
-              <div class="col-12 col-sm-8 ">
+          <div class="container-fluid  pb-3 mb-5">
+            <div class="row  pt-3">
+              <div class=" col-sm-12 col-md-6 ">
                 <h5>Simulador Interactivo</h5>
               </div>
             </div>    
-            <div class="row justify-content-center p-3">
-              <div class="col-12 col-sm-8 ">
+            <div class="row  p-3">
+              <div class="col-6 col-sm-12 col-md-2">
+                <label for="mesInicial">Elije el mes inicial</label>
                 <select id="mesInicial" class="custom-select mr-sm-2" >
-                  <option selected>Elije el mes inicial</option>
+                  <option selected></option>
                   <option value="Enero">Enero</option>
                   <option value="Febrero">Febrero</option>
                   <option value="Marzo">Marzo</option>
                   <option value="Abril">Abril</option>
                   <option value="Mayo">Mayo</option>
                   <option value="Junio">Junio</option>
+                  <option value="Julio">Julio</option>
+                  <option value="Agosto">Agosto</option>
+                  <option value="Septiembre">Septiembre</option>
+                  <option value="Octubre">Octubre</option>
+                  <option value="Noviembre">Noviembre</option>
+                  <option value="Diciembre">Diciembre</option>
                 </select>
               </div>
-            </div>
-            <div class="row justify-content-center p-3">
-              <div class="col-12 col-sm-8">
-                <select id="mesFinal" class="custom-select mr-sm-2">
-                  <option selected>Elije el mes final</option>
+              <div class="col-6 col-sm-12 col-md-2 ">
+                <label for="mesFinal">Elije el mes final</label>
+                <select id="mesFinal" class="custom-select mr-sm-2" >
+                  <option selected></option>
                   <option value="Enero">Enero</option>
                   <option value="Febrero">Febrero</option>
                   <option value="Marzo">Marzo</option>
                   <option value="Abril">Abril</option>
                   <option value="Mayo">Mayo</option>
                   <option value="Junio">Junio</option>
+                  <option value="Julio">Julio</option>
+                  <option value="Agosto">Agosto</option>
+                  <option value="Septiembre">Septiembre</option>
+                  <option value="Octubre">Octubre</option>
+                  <option value="Noviembre">Noviembre</option>
+                  <option value="Diciembre">Diciembre</option>
                 </select>
               </div>
             </div>
-            <div class="row justify-content-center p-3">
-              <div class="col-12 col-sm-8 ">
+            <div class="row  p-3">
+              <div class="col-6 col-sm-12 col-md-2 ">
+                <label for="valorKWH">Valor del KWH</label>
                 <input type="text" class="form-control" id="valorKWH" placeholder="Valor del KWH">
               </div>
+              <div class="col-6 col-sm-12 col-md-2 ">
+                <label for="valorKW">Valor del KW</label>
+                <input type="text" class="form-control" id="valorKW" placeholder="Valor del KW">
+              </div>
             </div>
-            <div class="row justify-content-center ">
-              <div class="col-12 col-sm-2 ">
+            <div class="row p-3">
+              <div class="col-6 col-sm-6 ">
                 <div class="posicion_boton">
-                  <button  id="calcular" class="btn btn-primary ">Calcular</button>
+                  <button  id="calcular" class="btn btn-outline-primary ">Calcular</button>
                 </div>
               </div>
             </div>

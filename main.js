@@ -1,7 +1,5 @@
-/* Programa para calcular cuanto se gastará en concepto de 
-potencia y energía,destinado a afectar una partida presupuestaria. Para estimar 
-actualmente no se usan valores estadísticos reales ni la totalidad de los meses ni el concepto de potencia solo el de energía(KWH). 
- */
+/* Programa para calcular cuanto se gastará en concepto de potencia y energía, destinado a afectar
+ una partida presupuestaria. */
 
                                 //CONTRASEÑA 1234//
 let presupuestoTotal=[];                                         
@@ -19,9 +17,11 @@ fijarFecha();
 //DECLARACIÓN DE VARIABLES//
 let seleccion1;
 let seleccion2;
-let valorKWH;  
+let valorKWH;
+let valorKW;  
 let object1;
 let object2; 
+let eficienciaEnergetica;
    
 // HACIENDO CLICK EN EL BOTÓN CALCULAR OBTENGO EL PRESUPUESTO SOLICITADO //
 let calcular= document.getElementById("calcular");    
